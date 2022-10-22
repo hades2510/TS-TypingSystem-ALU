@@ -13,3 +13,5 @@ type PartialAdd<LHS extends Bit[], RHS extends Bit[], CF extends CarryFlag = Zer
 type Add<LHS extends Byte, RHS extends Byte> = LHS extends [...infer LHSU extends Bit[], infer LHSR extends Bit] ? RHS extends [...infer RHSU extends Bit[], infer RHSR extends Bit] ? [...PartialAdd<LHSU, RHSU, AddBitsWithCarry<LHSR, RHSR>['cf']>, AddBitsWithCarry<LHSR, RHSR>['value']] : [] : []
 
 type Byte2Complement<T extends Byte> = AddOne<ByteNot<T>>
+
+type Subtract<LHS extends Byte, RHS extends Byte> = Add<LHS, Byte2Complement<RHS>>
