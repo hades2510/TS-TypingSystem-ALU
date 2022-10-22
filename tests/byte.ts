@@ -11,6 +11,7 @@ const one: AreEqual<ONE, [Zero, Zero, Zero, Zero, Zero, Zero, Zero, One]> = true
 const two: AreEqual<TWO, [Zero, Zero, Zero, Zero, Zero, Zero, One, Zero]> = true
 const three: AreEqual<THREE, [Zero, Zero, Zero, Zero, Zero, Zero, One, One]> = true
 const four: AreEqual<FOUR, [Zero, Zero, Zero, Zero, Zero, One, Zero, Zero]> = true
+const overlfow: AreEqual<AddOne<ONLY_ONE>, ZERO_BYTE> = true
 
 const NOT_TEST_BYTE: AreEqual<ByteNot<TEST_BYTE>, [One, Zero, Zero, One, Zero, One, One, Zero]> = true
 
