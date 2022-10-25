@@ -1,5 +1,4 @@
 type TEST_BYTE = [Zero, One, One, Zero, One, Zero, Zero, One]
-type ZERO_BYTE = [Zero, Zero, Zero, Zero, Zero, Zero, Zero, Zero]
 type ONLY_ONE = [One, One, One, One, One, One, One, One]
 
 type ONE = AddOne<ZERO_BYTE>
