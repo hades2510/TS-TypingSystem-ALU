@@ -16,3 +16,5 @@ type Byte2Complement<T extends Byte> = AddOne<ByteNot<T>>
 
 type Subtract<LHS extends Byte, RHS extends Byte> = Add<LHS, Byte2Complement<RHS>>
 type SubtractOne<LHS extends Byte> = Subtract<LHS, ONE_BYTE>
+
+type Mul<LHS extends Byte, RHS extends Byte, Result extends Byte = RHS> = ONE_BYTE extends LHS ? Result : ZERO_BYTE extends LHS ? ZERO_BYTE : Mul<SubtractOne<LHS>, RHS, Add<Result, RHS>>
