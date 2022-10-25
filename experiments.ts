@@ -1,0 +1,1 @@
+type FIBONACCI<C extends Byte, A extends Byte = ONE_BYTE, B extends Byte = ONE_BYTE> =  ONE_BYTE extends C ? A : AddOne<ONE_BYTE> extends C ? A : FIBONACCI<SubtractOne<C>, Add<A, B>, A>
