@@ -15,3 +15,4 @@ type Add<LHS extends Byte, RHS extends Byte> = LHS extends [...infer LHSU extend
 type Byte2Complement<T extends Byte> = AddOne<ByteNot<T>>
 
 type Subtract<LHS extends Byte, RHS extends Byte> = Add<LHS, Byte2Complement<RHS>>
+type SubtractOne<LHS extends Byte> = Subtract<LHS, ONE_BYTE>
