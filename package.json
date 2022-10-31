@@ -1,0 +1,25 @@
+{
+  "name": "ts-typingsystem-alu",
+  "version": "1.0.0",
+  "description": "This is an implementation of a simple ALU in the TS (TypeScript) typing system.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hades2510/TS-TypingSystem-ALU.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hades2510/TS-TypingSystem-ALU/issues"
+  },
+  "homepage": "https://github.com/hades2510/TS-TypingSystem-ALU#readme",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
